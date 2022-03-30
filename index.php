@@ -64,7 +64,7 @@ if (isset($_POST['valores'])) {
             margin-left: 3px;
             border-radius: 3px;
             margin-bottom: 5px;
-            font-size: 16px;
+            font-size: 18px;
             overflow: hidden;
             text-overflow: ellipsis;
         }
