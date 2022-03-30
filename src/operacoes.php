@@ -10,7 +10,7 @@ class operacoes {
             $_SESSION['valores'] = $_SESSION['visor'];
         }
 
-        if ($_SESSION['operadores']) {
+        if ($_SESSION['operadores'] && $_SESSION['valores'] && $_SESSION['valor']) {
             $this->resultadoByOperador();
         }
         $_SESSION['operadores'] = $_POST['operadores'];
@@ -105,8 +105,6 @@ class operacoes {
                 $_SESSION['valor'] = '';
                 $_SESSION['operadores'] = '';
                 break;
-            default:
-                $_SESSION['visor'] = 'ERRO';
         }
     }
 }

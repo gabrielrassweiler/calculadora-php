@@ -32,7 +32,8 @@ if (isset($_POST['valores'])) {
         body {
             text-align: center;
             position: absolute;
-            width:100%; 
+            width:100%;
+            background-color: #f2f2f2;
         }
 
         .form {
@@ -45,7 +46,12 @@ if (isset($_POST['valores'])) {
         .input {
             width: 70px;
             height: 60px;
-            margin: 3px
+            margin: 3px;
+            cursor: pointer;
+        }
+        .input:active {
+            background-color: #cbcbcb;
+            border: 1px solid black;
         }
 
         .table {
