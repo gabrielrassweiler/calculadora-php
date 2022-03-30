@@ -1,4 +1,27 @@
+<?php
 
+include './src/operacoes.php';
+
+session_start();
+$classResult = new operacoes();
+
+if (isset($_POST['operadores'])) {
+    $classResult->carregaOperadores();
+}
+
+if (isset($_POST['limpar'])) {
+    $classResult->limpaInformacoes();
+}
+
+if (isset($_POST['resultado'])) {
+    $classResult->carregaResultado();
+}
+
+if (isset($_POST['valores'])) {
+    $classResult->carregaValores();
+}
+
+?>
 
 <html>
 <head>
